@@ -1,0 +1,54 @@
+---
+import { getCollection, render } from 'astro:content';
+import '../styles/styles.css';
+import arrow from "../assets/arrow-dropdown.webp";
+const intro = await getCollection('intro');
+intro.sort((a, b) => a.data.order - b.data.order);
+const stops = await getCollection('stops');
+stops.sort((a, b) => a.data.order - b.data.order);
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<title>PraySkyline</title>
+	</head>
+	<body>
+		<nav class="navbar">
+			<!-- Dropdown https://getbootstrap.com/docs/5.0/components/dropdowns/ -->
+			<div class="dropdown">
+				<button class="dropdown-button">Stations <img src={arrow.src} width="30" height="30"></button>
+				<div class="dropdown-content">
+					<a href="#station-1">1 Kualaka'i</a>
+					<a href="#station-2">2 Keone'ae</a>
+				</div>
+			</div>
+      		<!-- Navbar will go here -->
+    	</nav>
+		<h1>PraySkyline</h1>
+		<main>
+		{intro.map(async (intr) => {
+		const { Content } = await render(intr);
+		return (
+			<section id={`intr-${intr.data.order}`}>
+				<Content />
+			</section>
+		);
+		})}
+
+		<h1>Station Info & Prayer Guide</h1>
+      	{stops.map(async (stop) => {
+        const { Content } = await render(stop);
+        return (
+          <section id={`station-${stop.data.order}`}>
+            <h2>{stop.data.title}</h2>
+            <Content />
+          </section>
+        );
+      })}
+    </main>
+	</body>
+</html>
