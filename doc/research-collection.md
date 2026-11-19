@@ -12,7 +12,8 @@
 - [Park-and-ride lot with 300 stalls](https://www.hawaiinewsnow.com/2026/05/08/skyline-popularity-spurs-parking-problems-west-oahu-rail-station/) that gets full every weekday that users either park early or park on the grass.
 
 ## Honouliuli
-- Ho Farms and Aloun Farms own land here.
+- Aloun Farms.
+- Sugarland Farms Inc leases land by Kualaka'i Pkwy and the freeway (based on listing for parcel number 91018014).
 - [East Kapolei Elementary School plans to open 2029](https://hawaiipublicschools.org/2026-east-kapolei-school/) is located closer to Keone'ae actually
 
 ## Ho'ae'ae
