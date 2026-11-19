@@ -1,5 +1,5 @@
 ---
-title: 🚉3. Honouliuli — Hoʻopili
+title: 🚉 3. Honouliuli — Hoʻopili
 order: 3
 ---
 

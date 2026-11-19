@@ -1,5 +1,5 @@
 ---
-title: 2. 🚉Keoneʻae — UH West Oahu
+title: 🚉 2. Keoneʻae — UH West Oahu
 order: 2
 ---
 You may see residents and visitors at this station with their luggage heading to or from the airport. Commuters from Ewa Beach, Kapolei, and Waianae transfer here. 2,900+ students attend the University of Hawaii at West Oahu and Hawaii Tokai International College. This area brings together college students, faculty, staff, and families from across Oʻahu. For many young adults, university life is a season of discovering who they are, what they believe, and where their future may lead.

@@ -1,5 +1,5 @@
 ---
-title: 🚉1. Kualakaʻi — East Kapolei
+title: 🚉 1. Kualakaʻi — East Kapolei
 order: 1
 ---
 
