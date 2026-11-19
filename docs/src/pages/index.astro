@@ -4,8 +4,8 @@ import '../styles/styles.css';
 import arrow from "../assets/arrow-dropdown.webp";
 const intro = await getCollection('intro');
 intro.sort((a, b) => a.data.order - b.data.order);
-const stops = await getCollection('stops');
-stops.sort((a, b) => a.data.order - b.data.order);
+const stations = await getCollection('stations');
+stations.sort((a, b) => a.data.order - b.data.order);
 ---
 
 <html lang="en">
@@ -22,7 +22,7 @@ stops.sort((a, b) => a.data.order - b.data.order);
 			<div class="dropdown">
 				<button class="dropdown-button">Stations <img src={arrow.src} width="25" height="25" alt="dropdown menu arrow"></button>
 				<div class="dropdown-content">
-					<a href="#station-1">1 Kualaka'i</a>
+					<a href="#station-1">1 Kualakaʻi</a>
 					<a href="#station-2">2 Keone'ae</a>
 				</div>
 			</div>
@@ -40,11 +40,11 @@ stops.sort((a, b) => a.data.order - b.data.order);
 		})}
 
 		<h1>Station Info & Prayer Guide</h1>
-      	{stops.map(async (stop) => {
-        const { Content } = await render(stop);
+      	{stations.map(async (station) => {
+        const { Content } = await render(station);
         return (
-          <section id={`station-${stop.data.order}`}>
-            <h2>{stop.data.title}</h2>
+          <section id={`station-${station.data.order}`}>
+            <h2>{station.data.title}</h2>
             <Content />
           </section>
         );

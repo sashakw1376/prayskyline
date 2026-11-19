@@ -14,12 +14,12 @@ const intro = defineCollection({
         order: z.number()
     })
 })
-const stops = defineCollection({
-    loader: glob({ pattern: '**/*.md', base: './src/content/stops' }),
+const stations = defineCollection({
+    loader: glob({ pattern: '**/*.md', base: './src/content/stations' }),
     schema: z.object({
         title: z.string(),
         order: z.number().default(999)
     })
 })
 
-export const collections = { intro, stops };
+export const collections = { intro, stations };
